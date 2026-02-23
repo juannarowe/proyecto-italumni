@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAlumni - Red de Exalumnos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuración del Design System (Extraído de tu Figma)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Marca y acentos
+                        'it-magenta': '#DF007F',
+                        'it-magenta-light': '#FEF0F9',
+                        'it-violet': '#873AAA',
+
+                        // Neutros (Negros y Grises)
+                        'it-black': '#000000',
+                        'it-dark': '#1D2128',
+                        'it-gray-deep': '#565E6C',
+                        'it-gray-medium': '#BCC1CA',
+                        'it-gray-light': '#DEE1E6',
+
+                        // Fondos
+                        'it-bg-white': '#FFFFFF',
+                    },
+                    backgroundImage: {
+                        'it-gradient': 'linear-gradient(to right, #873AAA, #DF007F)',
+                    },
+                    fontFamily: {
+                        // Poppins para títulos, Inter para el resto
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        /* Aquí añadiremos estilos base si son necesarios */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
+    </style>
+</head>
+
+<body class="bg-it-bg font-sans text-it-primary">
+
+    <div id="app" class="min-h-screen flex flex-col">
+        <h1 class="font-heading text-2xl p-4">Bienvenido a ITAlumni</h1>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
