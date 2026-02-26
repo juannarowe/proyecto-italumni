@@ -1,24 +1,23 @@
-ITAlumni - Red de Exalumnos
+• ITAlumni - Red de Exalumnos
 
 Una plataforma web profesional diseñada para la gestión y visualización de una red de exalumnos (IT Academy). Permite explorar perfiles de graduados, consultar eventos y ofertas de trabajo, todo bajo una arquitectura modular, robusta y escalable.
 
 
-Demo
+• Demo
 
+https://italumni.netlify.app/
 
-
-
-Instalación
+• Instalación
 
 Clona el repositorio e instala las dependencias utilizando npm (o el gestor que prefieras):
 
 Bash
-git clone https://github.com/tu-usuario/proyecto-italumni.git
+git clone https://github.com/juannarowe/proyecto-italumni.git
 cd proyecto-italumni
 npm install
 
 
-Uso
+• Uso
 
 Para iniciar el servidor de desarrollo con Vite:
 
@@ -26,7 +25,7 @@ Bash
 npm run dev
 La aplicación estará disponible en http://localhost:5173.
 
-Para generar el archivo de estilos de Tailwind (el output.css que pidió el revisor):
+Para generar el archivo de estilos de Tailwind:
 
 Bash
 npx tailwindcss -i ./src/styles/tailwind/tailwind.input.css -o ./src/styles/output.css --watch
@@ -37,7 +36,7 @@ Bash
 npm run build
 
 
-✨ Características
+• Características
 
 Gestión de Alumni: Visualización dinámica de perfiles de exalumnos cargados desde JSON.
 Arquitectura Agnóstica: Sistema de carga de datos (DataManager) preparado para consumir cualquier API o archivo local sin modificar la lógica principal.
@@ -47,7 +46,7 @@ Responsive Design: Interfaz adaptativa construida íntegramente con Tailwind CSS
 Tipado Estricto: Uso total de TypeScript para garantizar la seguridad de los datos y evitar errores en tiempo de ejecución.
 
 
-Tech Stack
+• Tech Stack
 
 Tecnología
 Propósito
@@ -63,7 +62,7 @@ JSON
 Almacenamiento de datos de prueba
 
 
-📁 Estructura del Proyecto
+• Estructura del Proyecto
 
 ├── features/                # Módulos por funcionalidad
 │   └── alumni/              # Feature de Alumnos
@@ -80,12 +79,10 @@ Almacenamiento de datos de prueba
 └── main.ts                  # Punto de entrada de la aplicación
 
 
-💡 Lógica de Datos
+• Lógica de Datos
 
-El proyecto utiliza un patrón de DataManager Genérico. Esto permite que la función getData<T>(url) pueda recibir cualquier interfaz (Alumni, Event, Job) y devolver los datos tipados correctamente:
-```TypeScript
-// Ejemplo de uso agnóstico
-const alumnos = await dataManager.getData<Alumnus>(API_CONFIG.ALUMNI);
-```
-🙌 Créditos
+El proyecto utiliza un patrón de DataManager Genérico. Esto permite que la función getData<T>(url) pueda recibir cualquier interfaz (Alumni, Event, Job) y devolver los datos tipados correctamente.
+
+• Créditos
+
 Desarrollado como proyecto para IT Academy utilizando TypeScript, Vite y Tailwind CSS.
