@@ -1,57 +1,250 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>ITAlumni - Red de Exalumnos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        // Configuración del Design System (Extraído de tu Figma)
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        // Marca y acentos
-                        'it-magenta': '#DF007F',
-                        'it-magenta-light': '#FEF0F9',
-                        'it-violet': '#873AAA',
-
-                        // Neutros (Negros y Grises)
-                        'it-black': '#000000',
-                        'it-dark': '#1D2128',
-                        'it-gray-deep': '#565E6C',
-                        'it-gray-medium': '#BCC1CA',
-                        'it-gray-light': '#DEE1E6',
-
-                        // Fondos
-                        'it-bg-white': '#FFFFFF',
-                    },
-                    backgroundImage: {
-                        'it-gradient': 'linear-gradient(to right, #873AAA, #DF007F)',
-                    },
-                    fontFamily: {
-                        // Poppins para títulos, Inter para el resto
-                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-                        heading: ['Poppins', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style type="text/css">
-        /* Aquí añadiremos estilos base si son necesarios */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
-    </style>
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <script type="module" src="/src/main.ts"></script>
 </head>
 
-<body class="bg-it-bg font-sans text-it-primary">
+<body>
+    <!-- Header -->
 
-    <div id="app" class="min-h-screen flex flex-col">
-        <h1 class="font-heading text-2xl p-4">Bienvenido a ITAlumni</h1>
+    <header class="flex flex-col items-center justify-between min-h-screen px-5 pt-16 pb-0 text-center bg-white">
+        <div class="flex flex-col items-center mt-20">
+            <img src="./src/assets/logo.svg" alt="ITAlumni Logo" class="w-64 mb-10 px-5">
+
+            <p class="text-it text-sm font-light leading-relaxed max-w-[450px] mx-2">
+                Connectant i empoderant a la nostra comunitat global d’alumnes
+            </p>
+        </div>
+
+        <div class="w-full max-w-sm mb-10 mt-auto">
+            <button
+                class="w-full bg-it-gradient text-white py-4 rounded-md text-xs font-light shadow-lg transition-transform active:scale-95">
+                Uneix-te
+            </button>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+
+    <div class="w-full h-auto overflow-hidden">
+        <div class="aspect-video w-full">
+            <iframe class="w-full h-full object-cover"
+                src="https://www.youtube.com/embed/z_tHdHqCBxw?si=eq8avfENgo-b-QmK&autoplay=1&mute=1&loop=1&playlist=z_tHdHqCBxw"
+                title="IT IS IT ACADEMY" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <!-- Hero Section -->
+
+    <div id="app">
+        <section class="flex flex-col items-center px-6 py-12 text-center bg-white">
+            <h1 class="text-4xl font-heading font-bold text-it-dark mb-4">
+                Benvingut, Alumni
+            </h1>
+            <p class="text-gray-600 mb-8 max-w-sm">
+                Connectant l'empoderament a la nostra comunitat global d'alumnes.
+            </p>
+            <div class="flex flex-col w-full max-w-sm gap-4 px-4">
+                <button class="bg-it-gradient text-white py-3 rounded-md font-normal shadow-md">
+                    Uneix-te
+                </button>
+                <button class="border border-it-magenta text-it-magenta py-3 rounded-md font-normal">
+                    Mira que fem
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Benefits Section -->
+
+    <section class="max-w-6xl mx-auto px-4 py-16 text-gray-800">
+
+        <div class="text-center mb-20">
+            <h2 class="text-3xl font-semibold mb-12">Què guanyes en formar-ne part?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="text-pink-600 mb-4 text-4xl">🎓</div>
+                    <p class="text-sm leading-relaxed mb-6 px-4">
+                        Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va tot i queda
+                        amb els companys. Una xarxa per estar més a prop.
+                    </p>
+                    <button
+                        class="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-2 rounded-lg text-sm font-medium">
+                        Apunta't ja
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="text-pink-600 mb-4 text-4xl">💬</div>
+                    <p class="text-sm leading-relaxed mb-6 px-4">
+                        Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes que
+                        t'interessen.
+                    </p>
+                    <button class="bg-pink-50 text-pink-600 px-8 py-2 rounded-lg text-sm font-medium">
+                        Apunta't ja
+                    </button>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="text-pink-600 mb-4 text-4xl">👤+</div>
+                    <p class="text-sm leading-relaxed mb-6 px-4">
+                        Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per durar
+                        tota la vida.
+                    </p>
+                    <button class="bg-pink-50 text-pink-600 px-8 py-2 rounded-lg text-sm font-medium">
+                        Apunta't ja
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold mb-12">"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-left">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://i.pravatar.cc/150?u=mikel" alt="Mikel"
+                            class="w-14 h-14 rounded-full bg-purple-200">
+                        <div>
+                            <h4 class="font-bold">Mikel</h4>
+                            <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 italic">"Gràcies a IT Alumni vaig aconseguir la feina dels meus
+                        somnis en el món tech amb el seu increïble programa de mentoria."</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-left">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://i.pravatar.cc/150?u=emma" alt="Emma"
+                            class="w-14 h-14 rounded-full bg-pink-200">
+                        <div>
+                            <h4 class="font-bold">Emma</h4>
+                            <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 italic">"La meva xarxa d'aquesta comunitat ha estat clau: va
+                        revolucionar la meva carrera i em va mostrar camins insospitats."</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-left">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://i.pravatar.cc/150?u=laia" alt="Laia"
+                            class="w-14 h-14 rounded-full bg-purple-200">
+                        <div>
+                            <h4 class="font-bold">Laia</h4>
+                            <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 italic">"IT Alumni em va donar les eines i l'autoestima per fer
+                        realitat el meu somni d'emprendre."</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-2">
+                <button
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-gray-200 transition">←</button>
+                <button
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-gray-200 transition">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#1a1f26] text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="flex flex-col items-center mb-16">
+                <h3 class="text-xl font-medium mb-6 text-center">"No et perdis res, subscriu-te!"</h3>
+                <div class="relative w-full max-w-md flex">
+                    <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="email" placeholder="El teu email"
+                        class="w-full bg-[#242933] border border-gray-600 rounded-l-full py-3 pl-10 pr-4 focus:outline-none focus:border-pink-500">
+                    <button
+                        class="bg-gradient-to-r from-purple-600 to-pink-500 px-8 py-3 rounded-r-full font-medium whitespace-nowrap">
+                        Subscriu-te
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <div class="flex items-center gap-2">
+                    <span class="text-3xl font-bold tracking-tighter flex items-center">
+                        <span class="text-pink-500 text-4xl mr-1">𝕏</span>LUMNI
+                    </span>
+                </div>
+
+                <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-medium">
+                    <a href="#" class="hover:text-pink-500 transition">Sobre nosaltres</a>
+                    <a href="#" class="hover:text-pink-500 transition">Funcionalitats</a>
+                    <a href="#" class="hover:text-pink-500 transition">Centre d'ajuda</a>
+                    <a href="#" class="hover:text-pink-500 transition">Contacta'ns</a>
+                    <a href="#" class="hover:text-pink-500 transition">FAQs</a>
+                    <a href="#" class="hover:text-pink-500 transition">Oportunitats laborals</a>
+                </nav>
+            </div>
+
+            <hr class="border-gray-700 mb-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+                <div class="relative">
+                    <select
+                        class="bg-transparent border border-gray-600 rounded-md py-1 px-4 pr-8 appearance-none text-sm cursor-pointer">
+                        <option>Català</option>
+                        <option>Español</option>
+                        <option>English</option>
+                    </select>
+                    <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none text-gray-400">⌄
+                    </div>
+                </div>
+
+                <div class="text-[10px] text-gray-400 text-center leading-loose">
+                    © 2024 Brand, Inc. • Privadesa • Termes d'ús<br class="md:hidden"> • Mapa del lloc
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition text-xl">
+                        <i class="fab fa-facebook"></i> <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-xl">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-xl">
+                        <i class="fab fa-youtube"></i>
+                        <span class="sr-only">YouTube</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
