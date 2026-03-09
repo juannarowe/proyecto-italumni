@@ -14,158 +14,278 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Navbar -->
 
-    <header class="flex flex-col items-center justify-between min-h-screen px-5 pt-16 pb-0 text-center bg-white">
-        <div class="flex flex-col items-center mt-20">
-            <img src="./src/assets/logo.svg" alt="ITAlumni Logo" class="w-64 mb-10 px-5">
+    <nav class="w-full bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
 
-            <p class="text-it text-sm font-light leading-relaxed max-w-[450px] mx-2">
-                Connectant i empoderant a la nostra comunitat global d’alumnes
-            </p>
-        </div>
+            <!-- Logo -->
+            <a href="#" class="flex-shrink-0">
+                <img src="./src/assets/logo.svg" alt="ITAlumni Logo" class="h-8 w-auto">
+            </a>
 
-        <div class="w-full max-w-sm mb-10 mt-auto">
-            <button
-                class="w-full bg-it-gradient text-white py-4 rounded-md text-xs font-light shadow-lg transition-transform active:scale-95">
-                Uneix-te
+            <!-- Nav links (desktop) -->
+            <ul class="hidden md:flex items-center gap-8 text-sm font-normal text-it-dark">
+                <li>
+                    <a href="#"
+                        class="relative pb-1 text-it-magenta font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-it-magenta">
+                        Inici
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-it-magenta transition-colors">
+                        Xarxa
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-it-magenta transition-colors">
+                        Oportunitats de feina
+                    </a>
+                </li>
+            </ul>
+
+            <!-- CTA Buttons (desktop) -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="#"
+                    class="flex items-center gap-2 border border-it-magenta text-it-magenta text-sm font-normal px-5 py-2 rounded-md hover:bg-it-magenta-light transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg>
+                    Apunta't
+                </a>
+                <a href="#"
+                    class="flex items-center gap-2 bg-it-violet text-white text-sm font-normal px-5 py-2 rounded-md hover:opacity-90 transition-opacity">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    Com et veuen?
+                </a>
+            </div>
+
+            <!-- Mobile hamburger -->
+            <button id="mobile-menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Obrir menu">
+                <span class="block w-6 h-0.5 bg-it-dark"></span>
+                <span class="block w-6 h-0.5 bg-it-dark"></span>
+                <span class="block w-6 h-0.5 bg-it-dark"></span>
             </button>
         </div>
-    </header>
 
-    <!-- Video Section -->
-
-    <div class="w-full h-auto overflow-hidden">
-        <div class="aspect-video w-full">
-            <iframe class="w-full h-full object-cover"
-                src="https://www.youtube.com/embed/z_tHdHqCBxw?si=eq8avfENgo-b-QmK&autoplay=1&mute=1&loop=1&playlist=z_tHdHqCBxw"
-                title="IT IS IT ACADEMY" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
+            <a href="#" class="text-it-magenta font-semibold text-sm">Inici</a>
+            <a href="#" class="text-it-dark text-sm">Xarxa</a>
+            <a href="#" class="text-it-dark text-sm">Oportunitats de feina</a>
+            <div class="flex flex-col gap-3 pt-2">
+                <a href="#"
+                    class="flex items-center justify-center gap-2 border border-it-magenta text-it-magenta text-sm py-2.5 rounded-md">
+                    Apunta't
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center gap-2 bg-it-violet text-white text-sm py-2.5 rounded-md">
+                    Com et veuen?
+                </a>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
 
-    <div id="app">
-        <section class="flex flex-col items-center px-6 py-12 text-center bg-white">
-            <h1 class="text-4xl font-heading font-bold text-it-dark mb-4">
-                Benvingut, Alumni
-            </h1>
-            <p class="text-gray-600 mb-8 max-w-sm">
-                Connectant l'empoderament a la nostra comunitat global d'alumnes.
-            </p>
-            <div class="flex flex-col w-full max-w-sm gap-4 px-4">
-                <button class="bg-it-gradient text-white py-3 rounded-md font-normal shadow-md">
-                    Uneix-te
-                </button>
-                <button class="border border-it-magenta text-it-magenta py-3 rounded-md font-normal">
-                    Mira que fem
-                </button>
+    <section class="bg-white py-24 md:py-36 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-it-dark mb-8 leading-tight">
+            Benvingut, Alumni
+        </h1>
+        <p class="text-gray-600 text-base md:text-lg mb-10 max-w-xl mx-auto">
+            Connectant i empoderant a la nostra comunitat global d'alumnes
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#"
+                class="bg-it-gradient text-white text-sm font-normal px-12 py-3.5 rounded-md hover:opacity-90 transition-opacity shadow-sm">
+                Uneix-te
+            </a>
+            <a href="#"
+                class="border border-it-magenta text-it-magenta text-sm font-normal px-10 py-3.5 rounded-md hover:bg-it-magenta-light transition-colors">
+                Mira que fem
+            </a>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+
+    <div class="w-full px-6 md:px-16 pb-16">
+        <div class="max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-sm">
+            <div class="aspect-video w-full">
+                <iframe class="w-full h-full"
+                    src="https://www.youtube.com/embed/z_tHdHqCBxw?si=eq8avfENgo-b-QmK&autoplay=1&mute=1&loop=1&playlist=z_tHdHqCBxw"
+                    title="IT IS IT ACADEMY" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
-        </section>
+        </div>
     </div>
+
+    <div id="app"></div>
 
     <!-- Benefits Section -->
 
-    <section class="max-w-6xl mx-auto px-4 py-16 text-gray-800">
+    <section class="max-w-5xl mx-auto px-6 py-20 text-gray-800">
 
-        <div class="text-center mb-20">
-            <h2 class="text-3xl font-semibold mb-12">Què guanyes en formar-ne part?</h2>
+        <h2 class="text-3xl font-semibold text-center mb-16">Què guanyes en formar-ne part?</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-                <div class="flex flex-col items-center text-center">
-                    <div class="text-pink-600 mb-4 text-4xl">🎓</div>
-                    <p class="text-sm leading-relaxed mb-6 px-4">
-                        Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va tot i queda
-                        amb els companys. Una xarxa per estar més a prop.
-                    </p>
-                    <button
-                        class="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-2 rounded-lg text-sm font-medium">
-                        Apunta't ja
-                    </button>
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Graduation cap icon -->
+                <div class="text-it-magenta mb-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 14l6.16-3.422A12.083 12.083 0 0121 17.002V21m-9-7l-6.16-3.422A12.083 12.083 0 003 17.002V21m9-7v7" />
+                    </svg>
                 </div>
-
-                <div class="flex flex-col items-center text-center">
-                    <div class="text-pink-600 mb-4 text-4xl">💬</div>
-                    <p class="text-sm leading-relaxed mb-6 px-4">
-                        Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes que
-                        t'interessen.
-                    </p>
-                    <button class="bg-pink-50 text-pink-600 px-8 py-2 rounded-lg text-sm font-medium">
-                        Apunta't ja
-                    </button>
-                </div>
-
-                <div class="flex flex-col items-center text-center">
-                    <div class="text-pink-600 mb-4 text-4xl">👤+</div>
-                    <p class="text-sm leading-relaxed mb-6 px-4">
-                        Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per durar
-                        tota la vida.
-                    </p>
-                    <button class="bg-pink-50 text-pink-600 px-8 py-2 rounded-lg text-sm font-medium">
-                        Apunta't ja
-                    </button>
-                </div>
+                <p class="text-sm leading-relaxed text-gray-600 mb-8 px-2">
+                    Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va tot
+                    i queda amb els companys. Una xarxa per estar més a prop.
+                </p>
+                <a href="#"
+                    class="mt-auto bg-it-gradient text-white px-8 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+                    Apunta't ja
+                </a>
             </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Chat bubble icon -->
+                <div class="text-it-magenta mb-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 mb-8 px-2">
+                    Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes
+                    que t'interessen.
+                </p>
+                <a href="#"
+                    class="mt-auto border border-it-magenta text-it-magenta px-8 py-2 rounded-lg text-sm font-medium hover:bg-it-magenta-light transition-colors">
+                    Apunta't ja
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Person + icon -->
+                <div class="text-it-magenta mb-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                    </svg>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-600 mb-8 px-2">
+                    Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per
+                    durar tota la vida.
+                </p>
+                <a href="#"
+                    class="mt-auto border border-it-magenta text-it-magenta px-8 py-2 rounded-lg text-sm font-medium hover:bg-it-magenta-light transition-colors">
+                    Apunta't ja
+                </a>
+            </div>
+
         </div>
+    </section>
 
-        <!-- Testimonials Section -->
+    <!-- Testimonials Section -->
 
-        <div class="text-center">
-            <h2 class="text-3xl font-semibold mb-12">"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
+    <section class="max-w-5xl mx-auto px-6 pb-20 text-gray-800">
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <h2 class="text-3xl font-semibold text-center mb-12">
+            "T'ensenyem el que opinen els nostres súper-usuaris!"
+        </h2>
 
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-left">
-                    <div class="flex items-center gap-4 mb-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-6 rounded-2xl text-left">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="p-0.5 rounded-full bg-it-gradient flex-shrink-0">
                         <img src="https://i.pravatar.cc/150?u=mikel" alt="Mikel"
-                            class="w-14 h-14 rounded-full bg-purple-200">
-                        <div>
-                            <h4 class="font-bold">Mikel</h4>
-                            <div class="text-yellow-400 text-sm">★★★★★</div>
-                        </div>
+                            class="w-12 h-12 rounded-full border-2 border-white object-cover">
                     </div>
-                    <p class="text-sm text-gray-600 italic">"Gràcies a IT Alumni vaig aconseguir la feina dels meus
-                        somnis en el món tech amb el seu increïble programa de mentoria."</p>
+                    <div>
+                        <h4 class="font-bold text-it-dark">Mikel</h4>
+                        <div class="text-yellow-400 text-sm leading-none">★★★★★</div>
+                    </div>
                 </div>
+                <p class="text-sm text-gray-600">
+                    "Gràcies a IT Alumni vaig aconseguir la feina dels meus somnis en el món tech amb el seu
+                    increïble programa de mentoria."
+                </p>
+            </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-left">
-                    <div class="flex items-center gap-4 mb-4">
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-6 rounded-2xl text-left">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="p-0.5 rounded-full bg-it-gradient flex-shrink-0">
                         <img src="https://i.pravatar.cc/150?u=emma" alt="Emma"
-                            class="w-14 h-14 rounded-full bg-pink-200">
-                        <div>
-                            <h4 class="font-bold">Emma</h4>
-                            <div class="text-yellow-400 text-sm">★★★★★</div>
-                        </div>
+                            class="w-12 h-12 rounded-full border-2 border-white object-cover">
                     </div>
-                    <p class="text-sm text-gray-600 italic">"La meva xarxa d'aquesta comunitat ha estat clau: va
-                        revolucionar la meva carrera i em va mostrar camins insospitats."</p>
+                    <div>
+                        <h4 class="font-bold text-it-dark">Emma</h4>
+                        <div class="text-yellow-400 text-sm leading-none">★★★★★</div>
+                    </div>
                 </div>
+                <p class="text-sm text-gray-600">
+                    "La meva xarxa d'aquesta comunitat ha estat clau: va revolucionar la meva carrera i em
+                    va mostrar camins insospitats."
+                </p>
+            </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-left">
-                    <div class="flex items-center gap-4 mb-4">
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-6 rounded-2xl text-left">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="p-0.5 rounded-full bg-it-gradient flex-shrink-0">
                         <img src="https://i.pravatar.cc/150?u=laia" alt="Laia"
-                            class="w-14 h-14 rounded-full bg-purple-200">
-                        <div>
-                            <h4 class="font-bold">Laia</h4>
-                            <div class="text-yellow-400 text-sm">★★★★★</div>
-                        </div>
+                            class="w-12 h-12 rounded-full border-2 border-white object-cover">
                     </div>
-                    <p class="text-sm text-gray-600 italic">"IT Alumni em va donar les eines i l'autoestima per fer
-                        realitat el meu somni d'emprendre."</p>
+                    <div>
+                        <h4 class="font-bold text-it-dark">Laia</h4>
+                        <div class="text-yellow-400 text-sm leading-none">★★★★★</div>
+                    </div>
                 </div>
+                <p class="text-sm text-gray-600">
+                    "IT Alumni em va donar les eines i l'autoestima per fer realitat el meu somni
+                    d'emprendre."
+                </p>
             </div>
 
-            <div class="flex justify-center gap-2">
-                <button
-                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-gray-200 transition">←</button>
-                <button
-                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-gray-200 transition">→</button>
-            </div>
         </div>
+
+        <!-- Navigation arrows -->
+        <div class="flex justify-center gap-3">
+            <button
+                class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-it-magenta hover:text-it-magenta transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button
+                class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-it-magenta hover:text-it-magenta transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+
     </section>
 
     <!-- Footer -->
@@ -193,11 +313,9 @@
             </div>
 
             <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-                <div class="flex items-center gap-2">
-                    <span class="text-3xl font-bold tracking-tighter flex items-center">
-                        <span class="text-pink-500 text-4xl mr-1">𝕏</span>LUMNI
-                    </span>
-                </div>
+                <a href="#" class="flex-shrink-0">
+                    <img src="./src/assets/logo.svg" alt="ITAlumni Logo" class="h-8 w-auto brightness-0 invert">
+                </a>
 
                 <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-medium">
                     <a href="#" class="hover:text-pink-500 transition">Sobre nosaltres</a>
@@ -245,6 +363,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
