@@ -115,11 +115,13 @@
                     class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-it-magenta focus:ring-1 focus:ring-it-magenta placeholder-gray-400 bg-white">
             </div>
             <!-- Filters -->
-            <div class="flex items-center gap-6 text-sm">
+            <div class="flex items-center gap-6 text-sm" id="filters-container">
                 <span class="text-gray-500 font-normal">Filters:</span>
-                <button class="text-gray-500 hover:text-it-dark transition-colors">Recent Activity</button>
-                <button class="text-it-magenta font-semibold">Popular</button>
-                <button class="text-gray-500 hover:text-it-dark transition-colors">Most Connected</button>
+                <button class="filter-btn text-it-magenta font-semibold" data-sort="recent">Recent Activity</button>
+                <button class="filter-btn text-gray-500 hover:text-it-dark transition-colors"
+                    data-sort="popular">Popular</button>
+                <button class="filter-btn text-gray-500 hover:text-it-dark transition-colors" data-sort="connected">Most
+                    Connected</button>
             </div>
         </div>
 
