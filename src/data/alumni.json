@@ -1,22 +1,115 @@
 [
   {
     "id": 1,
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "title": "Co-Founder at ABC Inc",
+    "stack": [
+      "React",
+      "Node.js",
+      "TypeScript"
+    ],
+    "availability": "Open to offers",
+    "imageUrl": "https://i.pravatar.cc/150?u=janesmith",
+    "location": "New York, NY"
+  },
+  {
+    "id": 2,
+    "firstName": "John",
+    "lastName": "Doe",
+    "title": "Product Manager at XYZ Corp",
+    "stack": [
+      "Agile",
+      "Scrum",
+      "Jira"
+    ],
+    "availability": "Employed",
+    "imageUrl": "https://i.pravatar.cc/150?u=johndoe",
+    "location": "San Francisco, CA"
+  },
+  {
+    "id": 3,
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "title": "Senior Developer at Tech Solutions",
+    "stack": [
+      "Python",
+      "Django",
+      "PostgreSQL"
+    ],
+    "availability": "Looking for a job",
+    "imageUrl": "https://i.pravatar.cc/150?u=alicejohnson",
+    "location": "Remote"
+  },
+  {
+    "id": 4,
+    "firstName": "David",
+    "lastName": "Brown",
+    "title": "Marketing Specialist at Brand Co",
+    "stack": [
+      "SEO",
+      "Google Ads",
+      "Analytics"
+    ],
+    "availability": "Employed",
+    "imageUrl": "https://i.pravatar.cc/150?u=davidbrown",
+    "location": "Chicago, IL"
+  },
+  {
+    "id": 5,
     "firstName": "Anna",
     "lastName": "Sanchez",
-    "title": "Frontend Developer",
-    "stack": ["HTML", "CSS", "JavaScript", "TypeScript"],
+    "title": "Frontend Developer at StartupX",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript"
+    ],
     "availability": "Looking for a job",
     "imageUrl": "https://i.pravatar.cc/150?u=1",
     "location": "Barcelona"
   },
   {
-    "id": 2,
+    "id": 6,
     "firstName": "Marc",
     "lastName": "Vila",
-    "title": "Fullstack Developer",
-    "stack": ["Node.js", "React", "SQL"],
+    "title": "Fullstack Developer at DevHouse",
+    "stack": [
+      "Node.js",
+      "React",
+      "SQL"
+    ],
     "availability": "Employed",
     "imageUrl": "https://i.pravatar.cc/150?u=2",
     "location": "Girona"
+  },
+  {
+    "id": 7,
+    "firstName": "Laura",
+    "lastName": "Garcia",
+    "title": "UX Designer at Creative Lab",
+    "stack": [
+      "Figma",
+      "Sketch",
+      "CSS"
+    ],
+    "availability": "Open to offers",
+    "imageUrl": "https://i.pravatar.cc/150?u=lauragarcia",
+    "location": "Madrid"
+  },
+  {
+    "id": 8,
+    "firstName": "Carlos",
+    "lastName": "Martinez",
+    "title": "Data Engineer at DataFlow",
+    "stack": [
+      "Python",
+      "Spark",
+      "AWS"
+    ],
+    "availability": "Employed",
+    "imageUrl": "https://i.pravatar.cc/150?u=carlosmartinez",
+    "location": "Valencia"
   }
 ]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Software Engineer",
+    "subtitle": "Posició a temps complet",
+    "meta": "Publicada fa 3 dies · Barcelona · Híbrida",
+    "type": "Full-time",
+    "ctaLabel": "Aplica ara",
+    "image": "/src/assets/Image 2.svg"
+  },
+  {
+    "id": 2,
+    "title": "Product Manager",
+    "subtitle": "Oportunitat remota",
+    "meta": "Publicada fa 1 setmana · Remote friendly",
+    "type": "Remote",
+    "ctaLabel": "Més detalls",
+    "image": "/src/assets/Image 3.svg"
+  },
+  {
+    "id": 3,
+    "title": "Data Analyst",
+    "subtitle": "Rol per projectes",
+    "meta": "Publicada fa 2 dies · Contracte",
+    "type": "Contracte",
+    "ctaLabel": "Veure oferta",
+    "image": "/src/assets/Laptop/Image.svg"
+  },
+  {
+    "id": 4,
+    "title": "UX Designer",
+    "subtitle": "Hores flexibles",
+    "meta": "Publicada fa 5 dies · Barcelona · Híbrid",
+    "type": "Part-time",
+    "ctaLabel": "Aplica",
+    "image": "/src/assets/Image.svg"
+  },
+  {
+    "id": 5,
+    "title": "Marketing Lead",
+    "subtitle": "Lideratge d'equip",
+    "meta": "Publicada fa 1 dia · Madrid · Presencial",
+    "type": "Full-time",
+    "ctaLabel": "Comença ara",
+    "image": "/src/assets/Image 2.svg"
+  },
+  {
+    "id": 6,
+    "title": "HR Specialist",
+    "subtitle": "Rol a mitja jornada",
+    "meta": "Publicada fa 4 dies · Barcelona · Híbrid",
+    "type": "Part-time",
+    "ctaLabel": "Descobreix més",
+    "image": "/src/assets/Image 3.svg"
+  }
+]
