@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>ITAlumni - Xarxa</title>
+    <title>ITAlumni - Esdeveniments</title>
     <link rel="stylesheet" href="../../src/styles/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body class="bg-white min-h-screen flex flex-col font-sans">
 
-    <!-- Navbar (Logged-in variant) -->
+    <!-- Navbar -->
     <nav class="w-full bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
 
@@ -32,8 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"
-                        class="relative pb-1 text-it-magenta font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-it-magenta">
+                    <a href="../xarxa/" class="hover:text-it-magenta transition-colors">
                         Xarxa
                     </a>
                 </li>
@@ -43,7 +42,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../events/" class="hover:text-it-magenta transition-colors">
+                    <a href="#"
+                        class="relative pb-1 text-it-magenta font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-it-magenta">
                         Esdeveniments
                     </a>
                 </li>
@@ -91,67 +91,24 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
             <a href="../../" class="text-it-dark text-sm">Inici</a>
-            <a href="#" class="text-it-magenta font-semibold text-sm">Xarxa</a>
+            <a href="../xarxa/" class="text-it-dark text-sm">Xarxa</a>
             <a href="../jobs/" class="text-it-dark text-sm">Oportunitats de feina</a>
-            <a href="../events/" class="text-it-dark text-sm">Esdeveniments</a>
+            <a href="#" class="text-it-magenta font-semibold text-sm">Esdeveniments</a>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto w-full px-6 lg:px-10 py-8 flex-1">
 
-        <!-- Top bar: Search (left) + Filters (right) — same line -->
-        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-10">
-            <!-- Search -->
-            <div class="relative w-full sm:w-64">
-                <div class="absolute inset-y-0 left-3 flex items-center pointer-events-none">
-                    <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </div>
-                <input id="search-input" type="text" placeholder="Search alumni..."
-                    class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-it-magenta focus:ring-1 focus:ring-it-magenta placeholder-gray-400 bg-white">
-            </div>
-            <!-- Filters -->
-            <div class="flex items-center gap-6 text-sm">
-                <span class="text-gray-500 font-normal">Filters:</span>
-                <button class="text-gray-500 hover:text-it-dark transition-colors">Recent Activity</button>
-                <button class="text-it-magenta font-semibold">Popular</button>
-                <button class="text-gray-500 hover:text-it-dark transition-colors">Most Connected</button>
-            </div>
-        </div>
+        <!-- Page Title -->
+        <h1 class="text-3xl md:text-4xl font-semibold text-it-dark text-center mb-10">
+            Esdeveniments
+        </h1>
 
-        <!-- Alumni cards grid (4 columns on desktop) -->
-        <div id="alumni-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-10 mb-14">
+        <!-- Events cards grid (3 columns on desktop) -->
+        <div id="events-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
             <!-- Cards injected by JS -->
         </div>
-
-        <!-- Recent Activity -->
-        <section class="mb-10">
-            <h3 class="font-semibold text-it-dark text-base mb-4">Recent Activity</h3>
-            <ul class="flex flex-col gap-3 text-sm text-gray-600">
-                <li>Jane Smith started following John Doe</li>
-                <li>David Brown and John Doe connected</li>
-                <li>John Doe shared "Top 10 Product Management Tips" article</li>
-                <li>Jane Smith and David Brown connected</li>
-            </ul>
-        </section>
-
-        <!-- Suggestions for You -->
-        <section class="mb-16">
-            <h3 class="font-semibold text-it-dark text-base mb-4">Suggestions for You</h3>
-            <div>
-                <p class="font-medium text-it-dark">Jane Smith</p>
-                <p class="text-sm text-gray-500 mt-1">Co-Founder at ABC Inc</p>
-                <p class="text-sm text-gray-500 mt-1 mb-4">New York, NY</p>
-                <button
-                    class="bg-it-magenta text-white py-1.5 px-8 rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
-                    Connect
-                </button>
-            </div>
-        </section>
 
     </main>
 
@@ -225,7 +182,7 @@
             menu.classList.toggle('hidden');
         });
     </script>
-    <script type="module" src="./xarxa.ts"></script>
+    <script type="module" src="./events.ts"></script>
 </body>
 
 </html>

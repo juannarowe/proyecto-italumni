@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Hackathon ITAlumni 2024",
+        "location": "Barcelona, Carrer de Pallars 193",
+        "date": "2024-04-20",
+        "description": "Competició de 24h per a alumni de l'IT Academy. Forma el teu equip i construeix el millor producte!"
+    },
+    {
+        "id": 2,
+        "name": "Networking Day Primavera",
+        "location": "Barcelona, Edifici MediaTIC",
+        "date": "2024-05-15",
+        "description": "Jornada de networking entre alumni i empreses col·laboradores. Carta de presentació i soft skills."
+    },
+    {
+        "id": 3,
+        "name": "Workshop: IA Aplicada al Treball",
+        "location": "Online (Zoom)",
+        "date": "2024-06-08",
+        "description": "Descobreix com integrar eines d'intel·ligència artificial al teu dia a dia professional. Places limitades."
+    },
+    {
+        "id": 4,
+        "name": "Demo Day · Generació Tardor",
+        "location": "Barcelona, CCCB",
+        "date": "2024-07-03",
+        "description": "L'alumnat de la generació de tardor presenta els seus projectes finals davant de la comunitat i empreses."
+    }
+]

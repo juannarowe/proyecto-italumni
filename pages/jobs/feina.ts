@@ -11,7 +11,7 @@ function generateOfferCard(offer: Offer): string {
                     <p class="text-gray-400 mt-2" style="font-size:13px;">${offer.subtitle}</p>
                     <p class="text-gray-400 mt-1" style="font-size:13px;">${offer.meta}</p>
                 </div>
-                <button class="border border-it-magenta text-it-magenta hover:bg-it-magenta hover:text-white transition-colors" style="font-size:13px;padding:3px 14px;border-radius:6px;margin-top:14px;display:inline-block;width:fit-content;width:-webkit-fit-content;cursor:pointer;">
+                <button class="border border-it-magenta text-it-magenta hover:bg-it-magenta-light transition-colors" style="font-size:13px;padding:3px 14px;border-radius:6px;margin-top:14px;display:inline-block;width:fit-content;width:-webkit-fit-content;cursor:pointer;">
                     ${offer.ctaLabel}
                 </button>
             </div>
