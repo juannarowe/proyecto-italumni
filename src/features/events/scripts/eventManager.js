@@ -1,26 +1,20 @@
 // src/features/events/scripts/eventManager.ts
-
 import { DataManager } from '../../../scripts/dataManager';
 import { API_CONFIG } from '../../../config/api.config';
-import type { Event } from '../types/event.types';
-
 export class EventManager {
-    private dataManager: DataManager;
-    private events: Event[] = [];
-
+    dataManager;
+    events = [];
     constructor() {
         this.dataManager = new DataManager();
     }
-
-    async loadEvents(): Promise<void> {
-        this.events = await this.dataManager.getData<Event>(API_CONFIG.EVENTS);
+    async loadEvents() {
+        this.events = await this.dataManager.getData(API_CONFIG.EVENTS);
     }
-
-    getAllEvents(): Event[] {
+    getAllEvents() {
         return this.events;
     }
-
-    getEventById(id: number): Event | undefined {
+    getEventById(id) {
         return this.events.find(event => event.id === id);
     }
 }
+//# sourceMappingURL=eventManager.js.map

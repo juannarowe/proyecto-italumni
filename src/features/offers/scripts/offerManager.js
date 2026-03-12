@@ -1,26 +1,20 @@
 // src/features/offers/offerManager.ts
-
 import { DataManager } from '../../../scripts/dataManager';
 import { API_CONFIG } from '../../../config/api.config';
-import type { Offer } from '../types/offer.types';
-
 export class OfferManager {
-    private dataManager: DataManager;
-    private offers: Offer[] = [];
-
+    dataManager;
+    offers = [];
     constructor() {
         this.dataManager = new DataManager();
     }
-
-    async loadOffers(): Promise<void> {
-        this.offers = await this.dataManager.getData<Offer>(API_CONFIG.OFFERS);
+    async loadOffers() {
+        this.offers = await this.dataManager.getData(API_CONFIG.OFFERS);
     }
-
-    getAllOffers(): Offer[] {
+    getAllOffers() {
         return this.offers;
     }
-
-    getOfferById(id: number): Offer | undefined {
+    getOfferById(id) {
         return this.offers.find(offer => offer.id === id);
     }
 }
+//# sourceMappingURL=offerManager.js.map
