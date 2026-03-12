@@ -9,7 +9,7 @@ export type Availability = 'Looking for a job' | 'Employed' | 'Open to offers';
  * Main interface for an IT Academy Alumnus
  */
 export interface Alumnus {
-    id: string;
+    id: number;
     firstName: string;
     lastName: string;
     title: string;         // e.g., "Frontend Developer"
