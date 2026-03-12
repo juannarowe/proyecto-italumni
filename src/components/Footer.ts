@@ -1,3 +1,5 @@
+import logoUrl from '../assets/logo.svg';
+
 export class AppFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -26,7 +28,7 @@ export class AppFooter extends HTMLElement {
                     <!-- Links & Logo -->
                     <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
                         <a href="/" class="flex-shrink-0">
-                            <img src="/src/assets/logo.svg" alt="ITAlumni Logo" class="h-8 w-auto brightness-0 invert">
+                            <img src="${logoUrl}" alt="ITAlumni Logo" class="h-8 w-auto brightness-0 invert">
                         </a>
 
                         <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-medium">

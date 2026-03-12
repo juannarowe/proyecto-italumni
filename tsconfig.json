@@ -9,10 +9,9 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "target": "esnext",
-    "types": [],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
+    "types": [
+      "vite/client"
+    ],
     // and npm install -D @types/node
     // Other Outputs
     "sourceMap": true,

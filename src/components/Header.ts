@@ -1,3 +1,5 @@
+import logoUrl from '../assets/logo.svg';
+
 export class AppHeader extends HTMLElement {
     connectedCallback() {
         const variant = this.getAttribute('variant') || 'private';
@@ -20,7 +22,7 @@ export class AppHeader extends HTMLElement {
                 <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
                     <!-- Logo -->
                     <a href="/" class="flex-shrink-0">
-                        <img src="/src/assets/logo.svg" alt="ITAlumni Logo" class="h-8 w-auto">
+                        <img src="${logoUrl}" alt="ITAlumni Logo" class="h-8 w-auto">
                     </a>
 
                     <!-- Nav links (desktop) -->

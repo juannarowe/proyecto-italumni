@@ -1,6 +1,6 @@
 export const API_CONFIG = {
-    ALUMNI: '/src/data/alumni.json',
-    EVENTS: '/src/data/event.json',
-    OFFERS: '/src/data/offer.json'
+    ALUMNI: '/data/alumni.json',
+    EVENTS: '/data/event.json',
+    OFFERS: '/data/offer.json'
 };
 //# sourceMappingURL=api.config.js.map
