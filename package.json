@@ -1,7 +1,7 @@
 {
   "name": "proyecto-italumni",
   "version": "1.0.0",
-  "type": "module", 
+  "type": "module",
   "description": "Proyecto de ITAlumni =====================",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^25.4.0",
     "autoprefixer": "^10.4.24",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19",
