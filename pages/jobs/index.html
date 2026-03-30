@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>ITAlumni - Oportunitats de feina</title>
+  <link rel="stylesheet" href="../../src/styles/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script type="module" src="../../src/main.ts"></script>
+</head>
+
+<body class="bg-white min-h-screen flex flex-col font-sans">
+
+  <!-- Navbar (Logged-in variant — same as Xarxa) -->
+  <app-header variant="private"></app-header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto w-full px-6 lg:px-10 py-8 flex-1">
+
+    <!-- Page Title -->
+    <h1 class="text-3xl md:text-4xl font-semibold text-it-dark text-center mb-10">
+      Jobs
+    </h1>
+
+    <!-- Jobs cards grid (3 columns on desktop) -->
+    <div id="jobs-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+      <!-- Cards injected by JS -->
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <app-footer></app-footer>
+  <script type="module" src="./feina.ts"></script>
+</body>
+
+</html>

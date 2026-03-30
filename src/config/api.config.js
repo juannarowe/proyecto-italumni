@@ -3,3 +3,4 @@ export const API_CONFIG = {
     EVENTS: '/data/event.json',
     OFFERS: '/data/offer.json'
 };
+//# sourceMappingURL=api.config.js.map

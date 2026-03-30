@@ -1,30 +1,24 @@
 // src/features/alumni/alumniManager.ts
-
 import { DataManager } from '../../../scripts/dataManager';
 import { API_CONFIG } from '../../../config/api.config';
-import type { Alumnus } from '../types/alumni.types';
-
 export class AlumniManager {
-    private dataManager: DataManager;
-    private alumni: Alumnus[] = [];
-
+    dataManager;
+    alumni = [];
     constructor() {
         this.dataManager = new DataManager();
     }
-
-    async loadAlumni(): Promise<void> {
+    async loadAlumni() {
         // 1. Usamos el método agnóstico 'getData'
         // 2. Le pasamos el tipo <Alumnus> para que TypeScript esté contento
         // 3. Usamos la URL desde la configuración (API_CONFIG.ALUMNI)
-        this.alumni = await this.dataManager.getData<Alumnus>(API_CONFIG.ALUMNI);
+        this.alumni = await this.dataManager.getData(API_CONFIG.ALUMNI);
     }
-
-    getAllAlumni(): Alumnus[] {
+    getAllAlumni() {
         return this.alumni;
     }
-
     // Ejemplo de cómo podrías filtrar si quisieras, ya que tienes los datos en 'this.alumni'
-    getAlumniById(id: number): Alumnus | undefined {
+    getAlumniById(id) {
         return this.alumni.find(alumnus => alumnus.id === id);
     }
 }
+//# sourceMappingURL=alumniManager.js.map

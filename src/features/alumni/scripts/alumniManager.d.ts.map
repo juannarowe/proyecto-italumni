@@ -1,0 +1,1 @@
+{"version":3,"file":"alumniManager.d.ts","sourceRoot":"","sources":["alumniManager.ts"],"names":[],"mappings":"AAIA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,uBAAuB,CAAC;AAErD,qBAAa,aAAa;IACtB,OAAO,CAAC,WAAW,CAAc;IACjC,OAAO,CAAC,MAAM,CAAiB;;IAMzB,UAAU,IAAI,OAAO,CAAC,IAAI,CAAC;IAOjC,YAAY,IAAI,OAAO,EAAE;IAKzB,aAAa,CAAC,EAAE,EAAE,MAAM,GAAG,OAAO,GAAG,SAAS;CAGjD"}
